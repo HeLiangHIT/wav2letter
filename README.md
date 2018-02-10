@@ -1,3 +1,13 @@
+> 开源语音识别工具包wav2letter！这是一款简单高效的端到端自动语音识别（ASR）系统，wav2letter 实现的是论文 Wav2Letter: an End-to-End ConvNet-based Speech Recognition System 和 Letter-Based Speech Recognition with Gated ConvNets 中提出的架构。16年11月，Facebook的三位研究者Ronan Collobert, Christian Puhrsch, Gabriel Synnaeve在arXiv.org上发布文章，正式提出了wav2letter。文章中研究者介绍，这是一个简单的端到端语音识别模型，结合了基于卷积网络的声学模型和图解码。其被训练输出文字，转录语音，而无需强制对齐音素。wav2letter还引入了一个自动的序列标注训练分割准则，而不需要与CTC一致的对齐方式，这种方式更简单。
+论文arXiv链接：https://arxiv.org/abs/1609.03193
+其与在LibriSpeech语料库中预先训练的一些模型一起发布，支持我们的最新论文Letter-Based Speech Recognition with Gated ConvNets。
+wav2letter是在Torch上编写的一个简单的工具包，简化了对端到端语音识别系统的训练，并提供了一个允许快速解码的独立解码器。
+它使我们能够复现我们最近的3篇论文（详见参考资料）。
+语料库 LibriSpeech。http://www.openslr.org/12
+论文 Letter-Based Speech Recognition with Gated ConvNets。 https://arxiv.org/abs/1712.09444
+论文 Wav2Letter: an End-to-End ConvNet-based Speech Recognition System。https://arxiv.org/abs/1609.03193
+论文 Learning Filterbanks from Raw Speech for Phone Recognition。https://arxiv.org/abs/1711.01161
+
 # wav2letter
 
 wav2letter is a simple and efficient end-to-end Automatic Speech
